@@ -9,4 +9,4 @@ instance Monoid (Lastt a) where
 
 
 testLastt = getLast . mconcat . map Lastt $ [Nothing, Just 9, Just 10]  
--- Just 10 
+-- Just 10
