@@ -93,8 +93,7 @@ readAddress form = let number = readNumber form
                        street = (get "street") form
                    in  and number street Address
 
-
 readAddress2 form = Address <$> (readNumber form) <*> ((get "street") form)
 
 readAddress3 form = liftA2 Address (readNumber form) ((get "street") form)
-
+ 
