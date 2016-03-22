@@ -25,7 +25,7 @@ to_i('1a') #=> 1
 to_i('a') #=> 0
  -}
 
-O(n)
+-- O(n)
 
 to_i :: String -> Int
 to_i [] = 0
